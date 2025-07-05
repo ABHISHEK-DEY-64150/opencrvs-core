@@ -74,6 +74,7 @@ function generateQuery(
         const allIds = [fieldId, ...(alternateFieldMap[fieldId] ?? [])]
 
         if (
+          // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
           alternateFieldMap[fieldId] &&
           alternateFieldMap[fieldId].length > 0
         ) {
